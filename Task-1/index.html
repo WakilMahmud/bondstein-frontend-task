@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navigation Bar</title>
+		<!-- Google Font CDN -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+		<!-- Remix Icon CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="navbar-brand">
+					<a href="#"
+						><i class="ri-apps-line"></i>
+						BRAND
+					</a>
+				</div>
+
+				<div class="navbar__menu hidden">
+					<a href="#" class="navbar__menu-link active">Home</a>
+
+					<a href="#about" class="navbar__menu-link">About</a>
+
+					<div class="navbar__dropdown-container">
+						<a href="#service" class="navbar__menu-link"
+							>Services
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20">
+								<path d="M16 12L10 18V6L16 12Z" fill="aqua"></path>
+							</svg>
+						</a>
+
+						<div class="navbar__dropdown-content hidden">
+							<a href="#api-services" class="navbar__dropdown-link">API Services</a>
+							<a href="#iot-services" class="navbar__dropdown-link">IOT R&D Services</a>
+						</div>
+					</div>
+
+					<a href="#contact" class="navbar__menu-link">Contact</a>
+					<a href="#login" class="navbar__menu-link"><i class="ri-login-box-line"></i> Login</a>
+				</div>
+
+				<div class="hamburger-btn">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Script -->
+		<script src="./index.js"></script>
+	</body>
+</html>
